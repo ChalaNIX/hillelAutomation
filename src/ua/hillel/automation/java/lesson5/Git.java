@@ -22,6 +22,7 @@ public class Git {
     -Checkout на гілку main
     - в ідеї відкрити файл gitignore і додати вкінці строки:
     .idea
+    -відкрити для коміту в IDEA: Ctrl + K
     *.iml
 
 

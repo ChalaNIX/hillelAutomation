@@ -33,6 +33,9 @@ public class Git {
     -створити клас, закомітити на гітхаб
     -відкрити гітхаб - з'являється кнопка Compare & pull request
     -Reviewers - додати викладача
+    -Merge на хітхабі
+
+    -pull в IDEA
 
 
      */

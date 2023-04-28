@@ -26,5 +26,9 @@ public class CardStore {
             deck[out] = tmpCard;
         }
     }
+    public static String[] getDeck() {
+        return deck;
+    }
+
 
 }

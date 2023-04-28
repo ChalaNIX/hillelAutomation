@@ -15,7 +15,11 @@ public class CardManager {
         for (int round = 1; round <= 5; round++) {
             System.out.println("Round: " + round);
             for (int player = 1; player <= players.length; player++) {
-                System.out.println("Player " + player + " gets: " + deck[index++]);
+                String card = deck[index++];
+                String[] playerCards = players[player-1].getCards();
+                playerCards[round-1] = card;
+                players[player-1].setCards(playerCards);
+                System.out.println("Player " + player + " gets: " + card);
             }
             System.out.println("====================\n");
         }

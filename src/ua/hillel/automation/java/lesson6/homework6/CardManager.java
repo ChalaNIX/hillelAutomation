@@ -9,6 +9,15 @@ public class CardManager {
         String [] arr = new String[4];
         return arr;
     }
+
+    public CardManager(CardStore cardStore) {
+        this.cardStore = cardStore;
+    }
+
+    public static void getPlayers(Player player) {
+
+    }
+
     public void serveCards(String[] deck) {
         int index = 0;
         for (int round = 1; round <= 5; round++) {

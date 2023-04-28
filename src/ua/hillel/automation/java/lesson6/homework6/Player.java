@@ -7,4 +7,12 @@ public class Player {
     public Player(String name) {
         this.name = name;
     }
+
+    public String[] getCards() {
+        return cards;
+    }
+
+    public void setCards(String[] cards) {
+        this.cards = cards;
+    }
 }

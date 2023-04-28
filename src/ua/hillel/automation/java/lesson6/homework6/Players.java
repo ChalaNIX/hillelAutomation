@@ -1,10 +1,10 @@
 package ua.hillel.automation.java.lesson6.homework6;
 
-public class Player {
+public class Players {
     private String name;
     private String[] cards;
 
-    public Player(String name) {
+    public Players(String name) {
         this.name = name;
     }
 
@@ -15,4 +15,6 @@ public class Player {
     public void setCards(String[] cards) {
         this.cards = cards;
     }
+
+
 }

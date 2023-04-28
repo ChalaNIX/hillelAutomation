@@ -2,18 +2,14 @@ package ua.hillel.automation.java.lesson6.homework6;
 
 public class Main {
     public static void main(String[] args) {
-        CardStore cardStore = CardStore.getInstance();
-        String[] deck = cardStore.getDeck();
+        CardStore cardStore = new CardStore();
+        CardManager cardManager = new CardManager(cardStore);
 
-        Player player1 = new Player("John");
-        CardManager.getPlayers(player1);
-        Player player2 = new Player("Monika");
-        CardManager.getPlayers(player2);
-        Player player3 = new Player("Chandler");
-        CardManager.getPlayers(player3);
-        Player player4 = new Player("Phib");
-        CardManager.getPlayers(player4);
-
-
+        Players player1 = new Players("John");
+        Players player2 = new Players("Monika");
+        Players player3 = new Players("Chandler");
+        Players player4 = new Players("Phib");
+        Players[] players = new Players[] {player1, player2, player3, player4};
+        cardManager.serveCards(players);
     }
 }

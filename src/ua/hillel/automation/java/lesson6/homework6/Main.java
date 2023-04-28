@@ -11,7 +11,7 @@ public class Main {
         CardManager.getPlayers(player2);
         Player player3 = new Player("Chandler");
         CardManager.getPlayers(player3);
-        Player player4 = new Player("Phibi");
+        Player player4 = new Player("Phib");
         CardManager.getPlayers(player4);
 
 

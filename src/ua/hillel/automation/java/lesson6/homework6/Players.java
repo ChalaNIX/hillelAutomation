@@ -1,18 +1,24 @@
 package ua.hillel.automation.java.lesson6.homework6;
 
-public class Player {
-    private String name;
-    private String[] cards;
+import java.util.Arrays;
 
-    public Player(String name) {
+public class Players {
+    private String name;
+    private String[] cards = new String[5];
+
+    public Players(String name) {
+
         this.name = name;
     }
 
     public String[] getCards() {
+
         return cards;
     }
 
     public void setCards(String[] cards) {
         this.cards = cards;
     }
+
+
 }

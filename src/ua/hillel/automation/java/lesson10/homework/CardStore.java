@@ -38,7 +38,6 @@ public class CardStore {
         }catch(NullPointerException nullPointerException) {
             throw new EmptyCardStoreException();
         }
-
     }
 
 

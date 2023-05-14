@@ -1,7 +1,5 @@
 package ua.hillel.automation.java.lesson10.homework;
 
-//import ua.hillel.automation.java.lesson6.homework6.CardStore;
-//import ua.hillel.automation.java.lesson6.homework6.Players;
 
 public class CardManager {
     private CardStore cardStore;

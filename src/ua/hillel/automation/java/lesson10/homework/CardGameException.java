@@ -1,7 +1,7 @@
 package ua.hillel.automation.java.lesson10.homework;
 
-public class EmptyCardStoreException extends RuntimeException {
-    public EmptyCardStoreException() {
+public class CardGameException extends RuntimeException {
+    public CardGameException() {
         super("Cardstore is empty. " +
                 "Try again later");
     }

@@ -26,18 +26,15 @@ public class CardStore {
                 deck[in] = deck[out];
                 deck[out] = tmpCard;
             }
-        } catch(NullPointerException nullPointerException) {
-            throw new EmptyCardStoreException();
+        } catch(ArrayIndexOutOfBoundsException a) {
+            throw new CardGameException();
 
         }
 
     }
     public static String[] getDeck() {
-        try{
             return deck;
-        }catch(NullPointerException nullPointerException) {
-            throw new EmptyCardStoreException();
-        }
+
     }
 
 

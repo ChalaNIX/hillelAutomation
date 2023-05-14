@@ -14,6 +14,7 @@ public class Main {
         Players[] players = new Players[] {player1, player2, player3, player4};
         cardManager.serveCards(players);
 
+
         System.out.println(Arrays.toString(player1.getCards()));
     }
 }

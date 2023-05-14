@@ -10,7 +10,6 @@ public class CardManager {
         this.cardStore = cardStore;
     }
 
-
     public void serveCards(Players[] players) {
         String[] deck = CardStore.getDeck();
         int index = 0;

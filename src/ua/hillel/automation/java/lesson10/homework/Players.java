@@ -16,7 +16,6 @@ public class Players {
 
     public void setCards(String[] cards) {
         this.cards = cards;
-
     }
 
 

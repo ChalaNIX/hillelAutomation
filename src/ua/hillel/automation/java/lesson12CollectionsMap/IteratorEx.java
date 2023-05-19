@@ -15,7 +15,7 @@ public class IteratorEx {
        list.add("three");
 
        //новий спосіб
-        list.removeIf(s->s.isBlank());
+//        list.removeIf(s->s.isBlank());
 //не працюючий спосіб - ексепшн
 //       for (String s: list) {
 //           if (s.isBlank()) {
@@ -23,13 +23,13 @@ public class IteratorEx {
 //           }
 //       }
         //застарілий спосіб. ітератор одноразовий
-//       Iterator<String> iterator = list.iterator();
-//        while (iterator.hasNext()) {  //поки є наступний елемент
-//            String s = iterator.next(); //кожен раз як викликаєм ітератор - показує наступний елемент
-//            if (s.isBlank()) {
-//                iterator.remove();
-//            }
-//        }
+       Iterator<String> iterator = list.iterator();
+        while (iterator.hasNext()) {  //поки є наступний елемент
+            String s = iterator.next(); //кожен раз як викликаєм ітератор - показує наступний елемент
+            if (s.isBlank()) {
+                iterator.remove();
+            }
+        }
         System.out.println(list);
     }
 }

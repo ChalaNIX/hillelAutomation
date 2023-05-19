@@ -42,6 +42,7 @@ public class CinderellasAssistant {
             }
         }
         System.out.println(nums);
+        System.out.println();
         System.out.println(numsDivideTwo);
         System.out.println(numsDivideThree);
         System.out.println(numsOther);

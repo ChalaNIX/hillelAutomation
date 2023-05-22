@@ -24,6 +24,7 @@ public class ShoppingList {
                     + set.getValue());
             sum +=set.getValue();
         }
+        System.out.println();
         System.out.println("Sum is: "+sum);
     }
 }

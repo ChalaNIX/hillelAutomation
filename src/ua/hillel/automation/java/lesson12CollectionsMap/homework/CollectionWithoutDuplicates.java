@@ -17,6 +17,7 @@ public class CollectionWithoutDuplicates {
         Set<Integer> list2 = new HashSet<>(list);
         System.out.println(list);
         System.out.println(list2);
+        System.out.println();
         System.out.println("Amount of duplicates: "+(list.size()-list2.size()));
     }
 

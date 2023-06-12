@@ -19,7 +19,7 @@
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>7.8.0</version>
-            <scope>test</scope>
+<!--            <scope>test</scope> - assert можем використовувати лише в тестах. scope опціональний-->
         </dependency>
         <dependency>
             <groupId>com.github.javafaker</groupId>
@@ -35,7 +35,8 @@
                 <version>3.1.0</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <!--<suiteXmlFile>testng.xml</suiteXmlFile>-->
+                        <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
+                        <!--<suiteXmlFile>src/test/resources/{suiteName}.xml</suiteXmlFile>-->
                     </suiteXmlFiles>
                     <systemProperties>
                         <url>https://test.site</url>

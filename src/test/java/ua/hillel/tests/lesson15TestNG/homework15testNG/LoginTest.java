@@ -2,6 +2,7 @@ package ua.hillel.tests.lesson15TestNG.homework15testNG;
 
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class LoginTest {
@@ -21,12 +22,17 @@ public class LoginTest {
             int a= 5/0;
         }catch (ArithmeticException e) {}
     }
+    @Test
+    @Parameters({"page","browserName"})
+    public void openPage(String page,String browserName){
+        System.out.println("Open " + page + " using "+ browserName);
+    }
+
     @DataProvider(name = "generateLogin")
     public Object [][] generateLogin() {
         String [][] users = {
                 {"Marta","ujhGL23/f","user"},
-                {"John","435hGL2","admin"},
-                {"Alexa","hhGL23","guest"}
+                {"Marta","ujhGL23/f","user"}
         };
         return users;
     }

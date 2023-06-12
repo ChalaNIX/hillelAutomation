@@ -8,14 +8,14 @@
 <!--            <class name="ua.hillel.tests.lesson15TestNG.TestClass"></class>-->
 <!--        </classes>-->
     </test>
-    <test name="Regression1" parallel="classes" thread-count="5">
-        <packages>
-            <package name="ua.hillel.tests.lesson15TestNG.parallelTests"></package>
-        </packages>
-<!--        <parameter name="url" value="http://stagel.com"></parameter>-->
-<!--        <parameter name="browserName" value="chrome"></parameter>-->
-<!--        <classes>-->
-<!--            <class name="ua.hillel.tests.lesson15TestNG.paramstests.ParamTest"></class>-->
-<!--        </classes>-->
+    <test name="Regression1">
+<!--        <packages>-->
+<!--            <package name="ua.hillel.tests.lesson15TestNG.homework15testNG"></package>-->
+<!--        </packages>-->
+        <parameter name="page" value="http://stagel.com"></parameter>
+        <parameter name="browserName" value="chrome"></parameter>
+        <classes>
+            <class name="ua.hillel.tests.lesson15TestNG.homework15testNG.LoginTest"></class>
+        </classes>
     </test>
 </suite>

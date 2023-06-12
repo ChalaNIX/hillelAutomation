@@ -1,4 +1,4 @@
-package ua.hillel.tests.beforeAfterTests;
+package ua.hillel.tests.lesson15TestNG.beforeAfterTests;
 
 //global before actions: before suit and before test
 

@@ -1,10 +1,10 @@
-package ua.hillel.tests;
+package ua.hillel.tests.lesson15TestNG;
 
 import org.testng.annotations.Test;
 
 public class SecondTest {
     @Test(groups = {"regression","smoke","p1"},
-    dependsOnMethods = {"innerTest"/*,"ua.hillel.tests.FirstTest.firstTest"*/},
+    dependsOnMethods = {"innerTest"/*,"ua.hillel.tests.lesson15TestNG.FirstTest.firstTest"*/},
     priority = 10)
     public static void secondTest() {
         System.out.println("I'm second test!");

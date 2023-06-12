@@ -1,4 +1,4 @@
-package ua.hillel.tests;
+package ua.hillel.tests.lesson15TestNG;
 
 import org.testng.annotations.Test;
 

@@ -1,4 +1,4 @@
-package ua.hillel.tests.data;
+package ua.hillel.tests.lesson15TestNG.data;
 
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;

@@ -1,8 +1,8 @@
-package ua.hillel.tests.parallelTests;
+package ua.hillel.tests.lesson15TestNG.parallelTests;
 
 import org.testng.annotations.Test;
 
-public class PClass2 {
+public class PClass1 {
     @Test
     public void test() {
        try {

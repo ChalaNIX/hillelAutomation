@@ -1,4 +1,4 @@
-package ua.hillel.tests.paramstests;
+package ua.hillel.tests.lesson15TestNG.paramstests;
 
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;

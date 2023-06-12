@@ -1,4 +1,4 @@
-package ua.hillel.tests.parallelTests;
+package ua.hillel.tests.lesson15TestNG.parallelTests;
 
 import org.testng.annotations.Test;
 

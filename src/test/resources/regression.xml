@@ -3,9 +3,9 @@
 <suite name="Suite1" verbose="1" >
     <test name="Nopackage" >
 <!--        <classes>-->
-<!--            <class name="ua.hillel.tests.FirstTest"></class>-->
-<!--            <class name="ua.hillel.tests.SecondTest"></class>-->
-<!--            <class name="ua.hillel.tests.TestClass"></class>-->
+<!--            <class name="ua.hillel.tests.lesson15TestNG.FirstTest"></class>-->
+<!--            <class name="ua.hillel.tests.lesson15TestNG.SecondTest"></class>-->
+<!--            <class name="ua.hillel.tests.lesson15TestNG.TestClass"></class>-->
 <!--        </classes>-->
     </test>
 <suite-files>

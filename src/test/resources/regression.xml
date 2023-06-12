@@ -1,17 +1,17 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
-<suite name="Suite1" verbose="1" >
-    <test name="Nopackage" >
-<!--        <classes>-->
-<!--            <class name="ua.hillel.tests.lesson15TestNG.FirstTest"></class>-->
-<!--            <class name="ua.hillel.tests.lesson15TestNG.SecondTest"></class>-->
-<!--            <class name="ua.hillel.tests.lesson15TestNG.TestClass"></class>-->
-<!--        </classes>-->
+<suite name="Suite1" verbose="1" parallel="tests" >
+    <test name="Regression1" parallel="classes" thread-count="5">
+        <parameter name="browser" value="ff"></parameter>
+        <packages>
+            <package name="ua.hillel.tests.lesson16wd.WdTest"></package>
+        </packages>
     </test>
-<suite-files>
-    <suite-file path="login.xml"/>
-    <suite-file path="cart.xml"/>
-    <suite-file path="orders.xml"/>
-</suite-files>
+    <test name="Regression2" parallel="classes" thread-count="5">
+        <parameter name="browser" value="chrome"></parameter>
+        <packages>
+            <package name="ua.hillel.tests.lesson16wd.WdTest"></package>
+        </packages>
+    </test>
 
 </suite>

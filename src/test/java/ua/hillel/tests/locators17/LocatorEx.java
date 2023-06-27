@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
+//не зберігати вебелементи в колекцію, бо не зможемо по ній пройтися - після кліку на перший елемент це вже буде інша сторінка
 
 public class LocatorEx {
     @Test

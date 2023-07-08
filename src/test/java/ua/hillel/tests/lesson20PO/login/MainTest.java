@@ -1,4 +1,4 @@
-package ua.hillel.tests.lesson20PageObjectsPageFactory.login;
+package ua.hillel.tests.lesson20PO.login;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -7,7 +7,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import ua.hillel.automation.java.pages.MainPage;
 
-public class BaseTest {  //можна екстендитись від базового класу щоб підтягувались методи
+public class MainTest {  //можна екстендитись від базового класу щоб підтягувались методи
     protected WebDriver driver;
     /*
     стандартний спосіб:

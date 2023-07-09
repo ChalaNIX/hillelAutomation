@@ -1,11 +1,11 @@
-package ua.hillel.tests.lesson20PageObjectsPageFactory.login;
+package ua.hillel.tests.lesson20PO.login;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import ua.hillel.automation.java.pages.LoginPage;
 import ua.hillel.automation.java.pages.MainPage;
 
-public class InvalidLoginTestPO extends BaseTest{
+public class InvalidLoginTestPO extends BaseCl {
 
     @Test
     public void invalidLoginTestPO(){

@@ -1,4 +1,4 @@
-package ua.hillel.tests.locators17;
+package ua.hillel.tests.lesson17locators;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;

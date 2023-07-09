@@ -13,36 +13,12 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
-public class BaseClass {  //можна екстендитись від базового класу щоб підтягувались методи
+public class BaseTest {
     protected WebDriver driver;
-    /*
-    стандартний спосіб:
-@BeforeSuite
-public void startDriver() {
-  WebDriverManager.chromedriver().setup();
-  driver = new ChromeDriver();
-  driver.manage().window().maximize();
-}
 
-@BeforeClass
-public void setUp() {
-  driver.get("https://the-internet.herokuapp.com/");
-}
-
-@AfterClass(alwaysRun = true)
-public void cleanUp() {
-  driver.manage().deleteAllCookies();
-}
-
-@AfterSuite(alwaysRun = true)
-public void closeDriver(){
-  driver.quit();
-}
- */
     @BeforeClass
     public void setUp(){
         WebDriverManager.chromiumdriver().setup();
-
 
         //налаштування завантаження файлів (4 сроки)
         ChromeOptions options = new ChromeOptions();

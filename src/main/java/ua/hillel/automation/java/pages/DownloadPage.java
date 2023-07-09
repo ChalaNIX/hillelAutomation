@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class DownloadPage extends BasePage{
-    @FindBy(linkText = "fileUploadTest.txt")
+    @FindBy(linkText = "some-file.txt")
     private WebElement fileLink;
 
     public DownloadPage() {

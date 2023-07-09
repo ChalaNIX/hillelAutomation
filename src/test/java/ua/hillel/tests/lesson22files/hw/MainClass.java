@@ -13,7 +13,7 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MainCl {  //можна екстендитись від базового класу щоб підтягувались методи
+public class MainClass {  //можна екстендитись від базового класу щоб підтягувались методи
     protected WebDriver driver;
 
     @BeforeClass

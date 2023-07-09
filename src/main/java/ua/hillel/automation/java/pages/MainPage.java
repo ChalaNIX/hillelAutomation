@@ -21,4 +21,16 @@ public class MainPage extends BasePage{
         clickButton(driver.findElement(By.linkText("File Download")));
         return new DownloadPage();
     }
+    public CheckboxesPage openCheckboxesPage(){
+        clickButton(driver.findElement(By.linkText("Checkboxes")));
+        return new CheckboxesPage(driver);
+    }
+    public HoversPage openHoversPage() {
+        clickButton(driver.findElement(By.linkText("Hovers")));
+        return new HoversPage(driver);
+    }
+    public ChallengingDOMPage openChallengingDOMPage() {
+        clickButton(driver.findElement(By.linkText("Challenging DOM")));
+        return new ChallengingDOMPage(driver);
+    }
 }

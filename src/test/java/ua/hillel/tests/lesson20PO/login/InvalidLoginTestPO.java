@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import ua.hillel.automation.java.pages.LoginPage;
 import ua.hillel.automation.java.pages.MainPage;
 
-public class InvalidLoginTestPO extends BaseCl {
+public class InvalidLoginTestPO extends BaseClass {
 
     @Test
     public void invalidLoginTestPO(){

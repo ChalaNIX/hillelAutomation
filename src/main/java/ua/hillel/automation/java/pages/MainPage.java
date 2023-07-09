@@ -17,4 +17,8 @@ public class MainPage extends BasePage{
         //driver.findElement(By.linkText("Form Authentication")).click();
         return new LoginPage();
     }
+    public DownloadPage openDownloadPage(){
+        clickButton(driver.findElement(By.linkText("File Download")));
+        return new DownloadPage();
+    }
 }

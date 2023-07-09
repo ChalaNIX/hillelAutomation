@@ -6,7 +6,7 @@ import ua.hillel.automation.java.pages.SecurePage;
 
 
 //ми екстендимо клас з beforeClass і afterClass методами які запускаються автоматично
-public class LoginTestPO extends BaseCl {
+public class LoginTestPO extends BaseClass {
     @Test
     public void loginTestPO() {
 

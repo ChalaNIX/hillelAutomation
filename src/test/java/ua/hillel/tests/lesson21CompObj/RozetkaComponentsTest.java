@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 import ua.hillel.automation.java.pages.rozetka21.CatalogPage;
 import ua.hillel.automation.java.pages.rozetka21.ItemPage;
 import ua.hillel.automation.java.pages.rozetka21.RozMainPage;
-import ua.hillel.tests.lesson20PO.login.BaseCl;
+import ua.hillel.tests.lesson20PO.login.BaseClass;
 
 //Selenium advanced - ComponentObject, CustomFactory, Singleton
 //Таким чином Page Object виступає в ролі контейнеру функціоналу і буде об'єднувати різні блоки
@@ -12,7 +12,7 @@ import ua.hillel.tests.lesson20PO.login.BaseCl;
 
 //Другий принцип - однотипні ел-ти на сторінках можна розділити на окремі класи і описати окремо
 //не потрібно вже давати публічний доступ
-public class RozetkaComponentsTest extends BaseCl {
+public class RozetkaComponentsTest extends BaseClass {
     @Test
     public void rozCompTest() {
         RozMainPage rozMainPage = new RozMainPage(driver);

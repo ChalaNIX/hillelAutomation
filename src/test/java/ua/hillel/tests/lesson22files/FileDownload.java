@@ -3,9 +3,9 @@ package ua.hillel.tests.lesson22files;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
-import ua.hillel.tests.lesson20PO.login.BaseCl;
+import ua.hillel.tests.lesson20PO.login.BaseClass;
 
-public class FileDownload extends BaseCl {
+public class FileDownload extends BaseClass {
     @Test
     public void fileDownload() {
         driver.get("https://the-internet.herokuapp.com/download");

@@ -13,7 +13,7 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
-public class BaseCl {  //можна екстендитись від базового класу щоб підтягувались методи
+public class BaseClass {  //можна екстендитись від базового класу щоб підтягувались методи
     protected WebDriver driver;
     /*
     стандартний спосіб:

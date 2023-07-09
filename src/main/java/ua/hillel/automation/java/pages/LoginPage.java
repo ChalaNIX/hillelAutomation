@@ -35,8 +35,9 @@ public class LoginPage extends BasePage{
 
     //@FindBys - знайти декілька
     //@FindAll
-    public LoginPage(WebDriver driver) {
-        super(driver);
+    public LoginPage() {
+        //super(driver);
+        super();
         //this.driver=driver;
         PageFactory.initElements(driver, this); //драйвер і посилання на клас
         //будуть створенні проксі елементи і драйвер буде шукати їх тільки коли ми будемо до них звертатися
@@ -58,7 +59,7 @@ public class LoginPage extends BasePage{
         //driver.findElement(loginButtonLocator).click();
              //clickButton(driver.findElement(loginButtonLocator));
         clickButton(loginButton);
-        return new SecurePage(driver);
+        return new SecurePage();
     }
 
     public LoginPage loginWithInvalidCreds() {

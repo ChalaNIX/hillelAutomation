@@ -11,7 +11,7 @@ public class InvalidLoginTestPO extends BaseTest{
     public void invalidLoginTestPO(){
         driver.get("https://the-internet.herokuapp.com/");
 
-        MainPage mainPage = new MainPage(driver);
+        MainPage mainPage = new MainPage();
         //invalid creds
         LoginPage loginPage = mainPage.openAuthPage()
                 .setUserName("InvalidUsername")

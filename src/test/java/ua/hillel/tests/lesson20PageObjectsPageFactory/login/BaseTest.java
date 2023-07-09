@@ -6,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import ua.hillel.automation.java.pages.MainPage;
+import ua.hillel.automation.java.utilis21.DriverHolder;
 
 public class BaseTest {  //можна екстендитись від базового класу щоб підтягувались методи
     protected WebDriver driver;
@@ -38,6 +39,8 @@ public void closeDriver(){
         WebDriverManager.chromiumdriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
+
+        DriverHolder.setDriver(driver);
     }
     @AfterClass(alwaysRun = true)
     public void cleanUp(){
@@ -46,6 +49,6 @@ public void closeDriver(){
 
     public MainPage openApp() {
         driver.get("https://the-internet.herokuapp.com/");
-        return new MainPage(driver);
+        return new MainPage();
     }
 }

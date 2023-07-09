@@ -1,4 +1,4 @@
-package ua.hillel.tests.lesson20PageObjectsPageFactory.login;
+package ua.hillel.tests.lesson20PO.login;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -7,11 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-//pageObject - клас для кожної сторінки з усіма веб елементами
-//тестовий фреймворк зберігається в частині main проєкту.
-public class InvalidLoginTest {
+public class LoginTest {
     @Test
-    public void invalidLoginTest(){
+    public void loginTest() {
         WebDriverManager.chromiumdriver().setup();
 
         WebDriver driver = new ChromeDriver();
@@ -26,7 +24,7 @@ public class InvalidLoginTest {
 
         WebElement password = driver.findElement(By.id("password"));
         password.clear();
-        password.sendKeys("InvalidPassword!");
+        password.sendKeys("SuperSecretPassword!");
 
         driver.findElement(By.cssSelector(".radius")).click();
 

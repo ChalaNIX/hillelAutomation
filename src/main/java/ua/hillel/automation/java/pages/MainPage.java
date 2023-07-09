@@ -20,4 +20,16 @@ public class MainPage extends BasePage{
         //driver.findElement(By.linkText("Form Authentication")).click();
         return new LoginPage(driver);
     }
+    public CheckboxesPage openCheckboxesPage(){
+        clickButton(driver.findElement(By.linkText("Checkboxes")));
+        return new CheckboxesPage(driver);
+    }
+    public HoversPage openHoversPage() {
+        clickButton(driver.findElement(By.linkText("Hovers")));
+        return new HoversPage(driver);
+    }
+    public ChallengingDOMPage openChallengingDOMPage() {
+        clickButton(driver.findElement(By.linkText("Challenging DOM")));
+        return new ChallengingDOMPage(driver);
+    }
 }

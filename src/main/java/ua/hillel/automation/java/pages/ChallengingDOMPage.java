@@ -14,7 +14,7 @@ public class ChallengingDOMPage extends BasePage{
 
 
     public ChallengingDOMPage(WebDriver driver) {
-        super(driver);
+        super();
     }
     public void clickAllButtons() {
         clickButton(driver.findElement(firstButton));

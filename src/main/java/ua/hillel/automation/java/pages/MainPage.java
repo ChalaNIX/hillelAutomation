@@ -6,9 +6,6 @@ import org.openqa.selenium.WebDriver;
 public class MainPage extends BasePage{
     //private WebDriver driver; //змінна без значення. значення передається з тесту за допомогою конструктора
 
-    public MainPage(WebDriver driver) {
-        super(driver);
-    }
 
     /*
         public void openAuthPage() {
@@ -18,7 +15,11 @@ public class MainPage extends BasePage{
     public LoginPage openAuthPage() {
         clickButton(driver.findElement(By.linkText("Form Authentication")));
         //driver.findElement(By.linkText("Form Authentication")).click();
-        return new LoginPage(driver);
+        return new LoginPage();
+    }
+    public DownloadPage openDownloadPage(){
+        clickButton(driver.findElement(By.linkText("File Download")));
+        return new DownloadPage();
     }
     public CheckboxesPage openCheckboxesPage(){
         clickButton(driver.findElement(By.linkText("Checkboxes")));

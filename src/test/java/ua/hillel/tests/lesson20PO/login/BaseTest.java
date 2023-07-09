@@ -1,4 +1,4 @@
-package ua.hillel.tests.lesson20PO.hw;
+package ua.hillel.tests.lesson20PO.login;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -13,20 +13,26 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
-public class BasicClass {
+public class BaseTest {
     protected WebDriver driver;
+
     @BeforeClass
-    public void setUp() {
+    public void setUp(){
         WebDriverManager.chromiumdriver().setup();
 
-        driver = new ChromeDriver(); //options передаються якщо ми налаштовували зберігання файлів
+        //налаштування завантаження файлів (4 сроки)
+        ChromeOptions options = new ChromeOptions();
+        Map<String, Object> prefs = new HashMap<String, Object>();
+        prefs.put("download.default_directory", new File("target/downloads").getAbsolutePath()); //target бо mvn її очищає після кожного запуску
+        options.setExperimentalOption("prefs", prefs);
+
+        driver = new ChromeDriver(options); //options передаються якщо ми налаштовували зберігання файлів (як вище)
         driver.manage().window().maximize();
 
         DriverHolder.setDriver(driver);
     }
-
     @AfterClass(alwaysRun = true)
-    public void cleanUp() {
+    public void cleanUp(){
         driver.quit();
     }
 

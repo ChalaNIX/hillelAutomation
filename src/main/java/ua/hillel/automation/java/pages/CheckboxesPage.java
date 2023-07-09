@@ -19,8 +19,7 @@ public class CheckboxesPage extends BasePage{
     private WebElement checkboxSecond;
 
     public CheckboxesPage(WebDriver driver) {
-
-        super(driver);
+        super();
         PageFactory.initElements(driver,this);
     }
 

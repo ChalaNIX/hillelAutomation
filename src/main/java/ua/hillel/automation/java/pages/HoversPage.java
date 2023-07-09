@@ -17,7 +17,7 @@ public class HoversPage extends BasePage{
     private By avatar3Title = By.xpath("//h5[text()='name: user3']");
     Actions actions = new Actions(driver);
     public HoversPage(WebDriver driver) {
-        super(driver);
+        super();
     }
     public void hoverOverWebElement(WebElement image) {
         actions.moveToElement(image).perform();

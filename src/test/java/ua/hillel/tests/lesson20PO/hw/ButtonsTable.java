@@ -16,6 +16,5 @@ public class ButtonsTable extends BasicClass {
 
         challengingDOMPage.printForthColumn();
 
-
     }
 }

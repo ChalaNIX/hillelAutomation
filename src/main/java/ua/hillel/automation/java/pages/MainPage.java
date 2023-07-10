@@ -33,4 +33,8 @@ public class MainPage extends BasePage{
         clickButton(driver.findElement(By.linkText("Challenging DOM")));
         return new ChallengingDOMPage(driver);
     }
+    public UploadPage openUploadPage(){
+        clickButton(driver.findElement(By.linkText("File Upload")));
+        return new UploadPage();
+    }
 }

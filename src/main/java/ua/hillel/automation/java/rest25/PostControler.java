@@ -1,12 +1,9 @@
 package ua.hillel.automation.java.rest25;
 import com.google.gson.Gson;
 import okhttp3.*;
-import org.json.JSONArray;
 import org.json.JSONObject;
 import ua.hillel.automation.java.rest25.entities.Post;
-
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
 
 //import org.openqa.selenium.devtools.v85.network.model.Request;
 

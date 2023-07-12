@@ -13,15 +13,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DownloadPage {
-    public void downloadFile(SelenideElement fileLink) throws FileNotFoundException {
-        fileLink.download();
+    File file;
+    public File downloadFile(SelenideElement fileLink) throws FileNotFoundException {
+        file = fileLink.download();
+        return file;
     }
-    public void editFile(Path filePath, String newContent) throws IOException {
-        File usersFile = new File(filePath.toUri());
+    public File editFile(File file, String newContent) throws IOException {
         List<String> lines = new ArrayList<>();
         lines.add("abra");
         lines.add("cadabra");
         lines.add(newContent);
-        Files.write(usersFile.toPath(),lines, StandardOpenOption.APPEND);
+        Files.write(file.toPath(),lines, StandardOpenOption.APPEND);
+        return file;
     }
 }

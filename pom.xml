@@ -17,6 +17,10 @@
         <seleniumVersion>4.10.0</seleniumVersion>
         <webdrivermanagerVersion>5.3.3</webdrivermanagerVersion>
         <selenideVersion>6.16.0</selenideVersion>
+        <okkttpVersion>4.11.0</okkttpVersion>
+        <jsonVersion>20230618</jsonVersion>
+        <gsonVersion>2.10.1</gsonVersion>
+        <lombokVersion>1.18.28</lombokVersion>
     </properties>
     <dependencies>
         <dependency>
@@ -45,6 +49,28 @@
             <groupId>com.codeborne</groupId>
             <artifactId>selenide</artifactId>
             <version>${selenideVersion}</version>
+        </dependency>
+        <!-- For REST API -->
+        <dependency>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>${okkttpVersion}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>${jsonVersion}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>${gsonVersion}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombokVersion}</version>
+            <scope>provided</scope>
         </dependency>
 
     </dependencies>

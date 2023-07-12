@@ -1,6 +1,5 @@
 package ua.hillel.automation.java.rest25.hw.entities;
 
-//
 import lombok.Data;
 
 @Data

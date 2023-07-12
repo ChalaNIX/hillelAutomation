@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 import ua.hillel.automation.java.rest25.hw.Store;
 import ua.hillel.automation.java.rest25.hw.entities.Order;
 import java.io.IOException;
-
+//
 public class PurchaseTest {
     @Test
     public void purchaseTest() throws IOException {

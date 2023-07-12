@@ -3,11 +3,11 @@ package ua.hillel.tests.lesson22files;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
-import ua.hillel.tests.lesson22files.hw.MainClass;
+import ua.hillel.tests.lesson22files.hw.MainCl;
 
 import java.io.File;
 
-public class FileUploadTest extends MainClass {
+public class FileUploadTest extends MainCl {
     @Test
     public void uploadTest() {
         //форма для завантаження має текстове поле/input і type=file. і коли ми натискаєм - відкривається директорія щоб вибрати файл

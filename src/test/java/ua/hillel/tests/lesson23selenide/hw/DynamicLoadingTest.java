@@ -12,7 +12,8 @@ public class DynamicLoadingTest extends ConfigurationClass{
         open("/dynamic_loading");
         DynamicLoadingPage loadingPage = new DynamicLoadingPage();
 
-        //showHiddenElement();
-        //showRenderedElement();
+        loadingPage.showHiddenElement();
+        open("/dynamic_loading");
+        loadingPage.showRenderedElement();
     }
 }

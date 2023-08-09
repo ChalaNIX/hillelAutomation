@@ -28,5 +28,6 @@ public class LoginTestPO extends BaseTest {
 
         Assert.assertEquals(securePage.getTitle(),"Secure Area", "Wrong page title is displayed");
         securePage.logout();
+        //
     }
 }

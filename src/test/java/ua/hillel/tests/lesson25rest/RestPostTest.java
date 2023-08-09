@@ -1,14 +1,17 @@
 package ua.hillel.tests.lesson25rest;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import ua.hillel.automation.java.rest25.PostControler;
 import ua.hillel.automation.java.rest25.entities.Comment;
 import ua.hillel.automation.java.rest25.entities.CommentWithLombok;
 import ua.hillel.automation.java.rest25.entities.Post;
+import ua.hillel.tests.listeners.CustomExtendReportListener;
 
 import java.io.IOException;
 
+@Listeners({CustomExtendReportListener.class})
 public class RestPostTest {
 
     @Test

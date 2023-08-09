@@ -9,8 +9,11 @@
 <!--        </classes>-->
     </test>
     <test name="Regression1">
-        <packages>
-            <package name="ua.hillel.tests.lesson15TestNG.login"></package>
-        </packages>
+<!--        <packages>-->
+<!--            <package name="ua.hillel.tests.lesson20PO.login"></package>-->
+<!--        </packages>-->
+        <classes>
+            <class name="ua.hillel.tests.lesson20PO.login.LoginTestPO"></class>
+        </classes>
     </test>
 </suite>

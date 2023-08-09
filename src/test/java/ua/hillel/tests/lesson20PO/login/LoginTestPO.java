@@ -26,7 +26,7 @@ public class LoginTestPO extends BaseTest {
 
         //SecurePage securePage = new SecurePage(driver);
 
-        Assert.assertEquals(securePage.getTitle(),"Secure Area", "Wrong page title is displayed");
+        Assert.assertEquals(securePage.getTitle(),"ecure Area", "Wrong page title is displayed");
         securePage.logout();
     }
 }

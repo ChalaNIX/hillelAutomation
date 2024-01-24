@@ -25,6 +25,7 @@ public class Store {
 
         OkHttpClient client = new OkHttpClient();
         Response response = client.newCall(request).execute();
+        //authToken = response.jsonPath().getString("token");
         //System.out.println(response.body().string());
         Order newOrder = gson.fromJson(response.body().string(), Order.class);
         return newOrder;
